@@ -1,6 +1,6 @@
 {
   "name": "@ams-pro/no-dissuasion-without-contact",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,8 @@
     "type": "git",
     "url": "https://github.com/michael-spengler/dp-web-components",
     "directory": "no-dissuasion-without-contact"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
