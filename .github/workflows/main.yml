@@ -18,8 +18,6 @@ jobs:
           echo run lib:pack
           cd no-dissuasion-without-contact
           npm pack
-      - name: NPM Login & Publish
-        run: |
           echo login to npm registry
-          NPM_USER=michael-spengler NPM_PASS=${{ secrets.authToken }} NPM_EMAIL=michael@spengler.biz NPM_REGISTRY=https://npm.pkg.github.com NPM_SCOPE=@amps-pro npm-cli-login --verbose
+          NPM_USER=michael-spengler NPM_PASS=${{ secrets.authToken }} NPM_EMAIL=michael@spengler.biz NPM_REGISTRY=https://npm.pkg.github.com NPM_SCOPE=@ams-pro npm-cli-login --verbose
           npm publish --verbose
